@@ -1,0 +1,258 @@
+<!--
+  Copyright (C) 2007-2014  CEA/DEN, EDF R&D, OPEN CASCADE
+
+  Copyright (C) 2003-2007  OPEN CASCADE, EADS/CCR, LIP6, CEA/DEN,
+  CEDRAT, EDF R&D, LEG, PRINCIPIA R&D, BUREAU VERITAS
+
+  This library is free software; you can redistribute it and/or
+  modify it under the terms of the GNU Lesser General Public
+  License as published by the Free Software Foundation; either
+  version 2.1 of the License, or (at your option) any later version.
+
+  This library is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+  Lesser General Public License for more details.
+
+  You should have received a copy of the GNU Lesser General Public
+  License along with this library; if not, write to the Free Software
+  Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307 USA
+
+  See http://www.salome-platform.org/ or email : webmaster.salome@opencascade.com
+
+-->
+<document>
+  <section name="launch">
+    <!-- SALOME launching parameters -->
+    <parameter name="gui"        value="yes"/>
+    <parameter name="splash"     value="yes"/>
+    <parameter name="file"       value="no"/>
+    <parameter name="key"        value="no"/>
+    <parameter name="interp"     value="no"/>
+    <parameter name="modules"    value="LIGHT,PYLIGHT"/>
+  </section>
+  <section name="language">
+    <!-- Language settings (resource manager)-->
+    <parameter name="languages"   value="en,fr,ja"/>
+    <parameter name="language"    value="en"/>
+    <parameter name="locale"      value="true"/>
+    <parameter name="translators" value="%P_msg_%L.qm|%P_icons.qm|%P_images.qm"/>
+  </section>
+  <section name="splash" >
+    <!-- Splash screen settings -->
+    <parameter name="image"             value="${GUI_ROOT_DIR}/share/salome/resources/gui/icon_about.png" />
+    <parameter name="constant_info"     value="%A [ %V ]" />
+    <parameter name="text_colors"       value="#ffffff|#777777" />
+    <parameter name="hide_on_click"     value="yes" />
+    <parameter name="show_progress"     value="yes" />
+    <parameter name="show_message"      value="yes" />
+    <parameter name="show_percents"     value="yes" />
+    <parameter name="margin"            value="50" />
+    <parameter name="progress_width"    value="20" />
+    <parameter name="progress_flags"    value="bottom,left_to_right" />
+    <parameter name="opacity"           value="0.85" />
+    <parameter name="font"              value="Tahoma,12,normal" />
+    <parameter name="alignment"         value="top,left" />
+    <parameter name="progress_colors"   value="#929ca7|#aebac7|v" />
+  </section>
+  <section name="resources">
+    <!-- Resource directories (resource manager)-->
+    <parameter name="Qtx"          value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="Style"        value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="SUIT"         value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="STD"          value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="ViewerTools"  value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="Plot2d"       value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="SPlot2d"      value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="GLViewer"     value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="GraphicsView" value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="OCCViewer"    value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="VTKViewer"    value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+	<parameter name="PVViewer"     value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>    
+    <parameter name="QxSceneViewer" value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="PyConsole"    value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="SalomeApp"    value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="OB"           value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="CAM"          value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="LightApp"     value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="SVTK"         value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="ToolsGUI"     value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="LogWindow"    value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+    <parameter name="Aster"    value="${GUI_ROOT_DIR}/share/salome/resources/gui"/>
+  </section>
+  <section name="desktop" >
+    <!-- Default GUI desktop state, position, size -->
+    <parameter name="geometry"      value="80%%x80%%+10%%+10%%"/>
+    <parameter name="opaque_resize" value="false"/>
+  </section>
+  <section name="PyConsole">
+    <!-- Python console preferences -->
+    <parameter name="show_banner"         value="false" />
+    <parameter name="font"                value="Sans Serif,12" />
+    <parameter name="additional_families" value="Helvetic;Helvetica;Helvetica[Adobe];Times;Times[Adobe];Sans Serif;Serif;Monospace;Lucida"/>
+  </section>
+  <section name="Style">
+    <!-- Style and theme preferences -->
+    <parameter name="use_salome_style" value="true" />
+  </section>
+  <section name="ObjectBrowser" >
+    <!-- Object Browser preferences -->
+    <parameter name="auto_hide_search_tool"   value="true" />
+    <parameter name="auto_size"               value="true" />
+    <parameter name="auto_size_first"         value="true" />
+    <parameter name="resize_on_expand_item"   value="true" />
+    <parameter name="browse_published_object" value="1" />
+  </section>
+  <section name="FileDlg">
+    <!-- "Open/Save File" dialog box preferences-->
+    <parameter name="QuickDirList" value=""/>
+    <parameter name="ShowCurDirInitial" value="true" />
+  </section>
+  <section name="MRU" >
+    <!-- Show "Most recently used" studies-->
+    <parameter name="show_mru" value="true"/>
+    <!-- Max number of stored "Most recently used" studies-->
+    <parameter name="max_count" value="50"/>
+    <!-- Max visible number of "Most recently used" studies-->
+    <parameter name="visible_count" value="7"/>
+    <!-- Insert mode-->
+    <parameter name="insert_mode" value="0"/>
+    <!-- Link type-->
+    <parameter name="link_type" value="0"/>
+    <!-- Show "Clear" item-->
+    <parameter name="show_clear" value="true"/>
+  </section>
+  <section name="Study">
+    <!-- General study settings -->
+    <parameter name="store_positions"    value="true" />
+    <parameter name="store_tool_positions"     value="true" />
+    <parameter name="auto_save_interval" value="0" />
+    <parameter name="multi_file"         value="false" />
+    <parameter name="ascii_file"         value="false" />
+  </section>
+  <section name="viewers" >
+    <!-- common viewers preferences -->
+    <parameter name="drop_down_buttons"     value="false" />
+  </section>
+  <section name="3DViewer">
+    <parameter name="trihedron_size"        value="100" />
+    <parameter name="relative_size"         value="true"/>
+    <parameter name="navigation_mode"       value="0" />
+    <parameter name="zooming_mode"          value="0" />
+    <parameter name="show_static_trihedron" value="true"/>
+  </section>
+  <section name="OCCViewer" >
+    <!-- OCC viewer preferences -->
+    <parameter name="enable_preselection" value="true"/>
+    <parameter name="enable_selection"    value="true"/>
+    <parameter name="background"      value="bt=2;fn=;tm=0;ts=false;c1=#cddbff;c2=#698fff;gt=1;gr=" />
+    <parameter name="xz_background"   value="bt=2;fn=;tm=0;ts=false;c1=#cddbff;c2=#698fff;gt=1;gr=" />
+    <parameter name="yz_background"   value="bt=2;fn=;tm=0;ts=false;c1=#cddbff;c2=#698fff;gt=1;gr=" />
+    <parameter name="xy_background"   value="bt=2;fn=;tm=0;ts=false;c1=#cddbff;c2=#698fff;gt=1;gr=" />
+ </section>
+ <section name="VTKViewer" >
+    <!-- VTK viewer preferences -->
+    <parameter name="background"                       value="0, 0, 0"/>
+    <parameter name="projection_mode"                  value="0"/>
+    <parameter name="preselection"                     value="0"/>
+    <parameter name="enable_selection"                 value="true"/>
+    <parameter name="speed_value"                      value="10"/>
+    <parameter name="speed_mode"                       value="0"/>
+    <parameter name="spacemouse_func1_btn"             value="1"/>
+    <parameter name="spacemouse_func2_btn"             value="2"/>
+    <parameter name="spacemouse_func5_btn"             value="5"/>
+    <parameter name="show_group_names"                 value="true"/>
+    <parameter name="group_names_text_color"           value="255, 255, 255"/>
+    <parameter name="group_names_transparency"         value="0.5"/>
+    <parameter name="recorder_mode"                    value="1"/>
+    <parameter name="recorder_fps"                     value="17.3"/>
+    <parameter name="recorder_quality"                 value="100" />
+    <parameter name="recorder_progressive"             value="true"/>
+ </section>
+ <section name="Plot2d" >
+    <!-- Plot2d viewer preferences -->
+    <parameter name="Background"   value="255, 255, 255" />
+    <parameter name="SelectionColor"   value="80, 80, 80" />
+    <parameter name="DeviationMarkerColor"   value="255, 0, 0" />
+    <parameter name="DeviationMarkerLineWidth" value="1" />
+    <parameter name="DeviationMarkerTickSize" value="2" />
+    <parameter name="CurveType"    value="1" />
+    <parameter name="HorScaleMode" value="0" />
+    <parameter name="LegendPos"    value="1" />
+    <parameter name="LegendSymbolType" value="0" />
+    <parameter name="LegendFont"   value="Helvetic,12" />
+    <parameter name="LegendFontColor"  value="0, 0, 0" />
+    <parameter name="SelectedLegendFontColor"  value="255, 255, 255" />
+    <parameter name="MarkerSize"   value="9" />
+    <parameter name="ShowLegend"   value="true" />
+    <parameter name="VerScaleMode" value="0" />
+    <parameter name="VerNormLMinMode" value="false"/>
+    <parameter name="VerNormLMaxMode" value="false"/>
+    <parameter name="VerNormRMinMode" value="false"/>
+    <parameter name="VerNormRMaxMode" value="false"/>
+  </section>
+  <section name="QxSceneViewer" >
+    <!-- QxScene viewer preferences -->
+    <parameter name="Background" value="144, 208, 211" />
+    <parameter name="Title"      value="63, 213, 255"  />
+    <parameter name="NodeBody"   value="255, 249, 147" />
+  </section>
+  <section name="GUI" >
+    <parameter name="documentation"     value="gui_help"/>
+  </section>
+  <section name="KERNEL" >
+    <parameter name="documentation"     value="kernel_help"/>
+  </section>
+  <section name="gui_help" >
+    <parameter name="sub_menu"          value="%1 module"/>
+    <parameter name="User's Guide"      value="${GUI_ROOT_DIR}/share/doc/salome/gui/GUI/index.html"/>
+    <parameter name="Developer's Guide" value="${GUI_ROOT_DIR}/share/doc/salome/tui/GUI/index.html"/>
+  </section>
+  <section name="kernel_help" >
+    <parameter name="sub_menu"          value="%1 module"/>
+    <parameter name="User's Guide"      value="${KERNEL_ROOT_DIR}/share/doc/salome/gui/KERNEL/index.html"/>
+    <parameter name="Developer's Guide" value="${KERNEL_ROOT_DIR}/share/doc/salome/tui/KERNEL/index.html"/>
+  </section>
+  <!--Salome shortcut settings-->
+  <section name="shortcuts_settings">
+    <parameter name="general_sections" value="General;Viewers"/>
+  </section>
+  <section name="shortcuts:General">
+    <parameter name="Show object(s)" value="Ctrl+Alt+S"/>
+    <parameter name="Hide object(s)" value="Ctrl+Alt+H"/>
+  </section>
+  <section name="shortcuts:Viewers">
+    <parameter name="Front view" value="Ctrl+Alt+F"/>
+    <parameter name="Back view" value="Ctrl+Alt+B"/>
+    <parameter name="Top view" value="Ctrl+Alt+T"/>
+    <parameter name="Bottom view" value="Ctrl+Alt+O"/>
+    <parameter name="Left view" value="Ctrl+Alt+K"/>
+    <parameter name="Right view" value="Ctrl+Alt+R"/>
+    <parameter name="Reset view" value="Ctrl+Alt+E"/>
+  </section>
+  <section name="shortcuts:Geometry">
+    <parameter name="Increase number of isolines" value="Meta+I"/>
+    <parameter name="Decrease number of isolines" value="Meta+D"/>
+    <parameter name="Increase transparency" value="Meta+Y"/>
+    <parameter name="Decrease transparency" value="Meta+T"/>
+  </section>
+  <section name="ExternalBrowser" >
+    <!-- External HELP browser settings -->
+    <parameter name="winapplication"       value="C:\Program Files\Internet Explorer\iexplore.exe" />
+    <parameter name="use_external_browser" value="false" />
+    <parameter name="application"          value="/usr/bin/mozilla" />
+    <parameter name="parameters"           value="" />
+  </section>
+  <section name="add_help">
+    <!-- Additional help resources -->
+    <parameter name="Developer resources"  value="${DOCUMENTATION_ROOT_DIR}/index.html" />
+  </section>
+ <section name="windows_geometry">
+  <parameter name="nomodule" value="#00 #00 #00 #FF #00 #00 #00 #00 #FD #00 #00 #00 #02 #00 #00 #00 #00 #00 #00 #01 #00 #00 #00 #02 #8D #FC #02 #00 #00 #00 #01 #FB #00 #00 #00 #22 #00 #6F #00 #62 #00 #6A #00 #65 #00 #63 #00 #74 #00 #42 #00 #72 #00 #6F #00 #77 #00 #73 #00 #65 #00 #72 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #37 #00 #00 #02 #8D #00 #00 #00 #53 #00 #FF #FF #FF #00 #00 #00 #03 #00 #00 #05 #40 #00 #00 #00 #53 #FC #01 #00 #00 #00 #01 #FB #00 #00 #00 #22 #00 #70 #00 #79 #00 #74 #00 #68 #00 #6F #00 #6E #00 #43 #00 #6F #00 #6E #00 #73 #00 #6F #00 #6C #00 #65 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #00 #00 #00 #05 #40 #00 #00 #00 #46 #00 #FF #FF #FF #00 #00 #04 #38 #00 #00 #02 #8D #00 #00 #00 #04 #00 #00 #00 #04 #00 #00 #00 #08 #00 #00 #00 #08 #FC #00 #00 #00 #01 #00 #00 #00 #02 #00 #00 #00 #02 #00 #00 #00 #1C #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #53 #00 #74 #00 #61 #00 #6E #00 #64 #00 #61 #00 #72 #00 #64 #01 #00 #00 #00 #00 #FF #FF #FF #FF #00 #00 #00 #00 #00 #00 #00 #00 #00 #00 #00 #1A #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #4D #00 #6F #00 #64 #00 #75 #00 #6C #00 #65 #00 #73 #01 #00 #00 #00 #CE #FF #FF #FF #FF #00 #00 #00 #00 #00 #00 #00 #00" />
+  <parameter name=""         value="#00 #00 #00 #FF #00 #00 #00 #00 #FD #00 #00 #00 #02 #00 #00 #00 #00 #00 #00 #01 #00 #00 #00 #02 #8D #FC #02 #00 #00 #00 #01 #FB #00 #00 #00 #22 #00 #6F #00 #62 #00 #6A #00 #65 #00 #63 #00 #74 #00 #42 #00 #72 #00 #6F #00 #77 #00 #73 #00 #65 #00 #72 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #37 #00 #00 #02 #8D #00 #00 #00 #00 #00 #00 #00 #00 #00 #00 #00 #03 #00 #00 #05 #40 #00 #00 #00 #74 #FC #01 #00 #00 #00 #01 #FB #00 #00 #00 #22 #00 #70 #00 #79 #00 #74 #00 #68 #00 #6F #00 #6E #00 #43 #00 #6F #00 #6E #00 #73 #00 #6F #00 #6C #00 #65 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #00 #00 #00 #05 #40 #00 #00 #00 #46 #00 #FF #FF #FF #00 #00 #05 #40 #00 #00 #02 #6C #00 #00 #00 #04 #00 #00 #00 #04 #00 #00 #00 #08 #00 #00 #00 #08 #FC #00 #00 #00 #01 #00 #00 #00 #02 #00 #00 #00 #02 #00 #00 #00 #1C #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #53 #00 #74 #00 #61 #00 #6E #00 #64 #00 #61 #00 #72 #00 #64 #01 #00 #00 #00 #00 #FF #FF #FF #FF #00 #00 #00 #00 #00 #00 #00 #00 #00 #00 #00 #1A #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #4D #00 #6F #00 #64 #00 #75 #00 #6C #00 #65 #00 #73 #01 #00 #00 #00 #CE #FF #FF #FF #FF #00 #00 #00 #00 #00 #00 #00 #00" />
+ </section>
+ <section name="windows_visibility">
+  <parameter name="nomodule" value="#00 #00 #00 #00 #04 #00 #00 #00 #0E #00 #4D #00 #6F #00 #64 #00 #75 #00 #6C #00 #65 #00 #73 #01 #00 #00 #00 #1A #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #4D #00 #6F #00 #64 #00 #75 #00 #6C #00 #65 #00 #73 #01 #00 #00 #00 #1C #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #53 #00 #74 #00 #61 #00 #6E #00 #64 #00 #61 #00 #72 #00 #64 #01 #00 #00 #00 #10 #00 #53 #00 #74 #00 #61 #00 #6E #00 #64 #00 #61 #00 #72 #00 #64 #01 #01 #00 #00 #00 #05 #00 #00 #00 #22 #00 #6F #00 #62 #00 #6A #00 #65 #00 #63 #00 #74 #00 #42 #00 #72 #00 #6F #00 #77 #00 #73 #00 #65 #00 #72 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #22 #00 #70 #00 #79 #00 #74 #00 #68 #00 #6F #00 #6E #00 #43 #00 #6F #00 #6E #00 #73 #00 #6F #00 #6C #00 #65 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #10 #00 #77 #00 #69 #00 #6E #00 #64 #00 #6F #00 #77 #00 #5F #00 #30 #01 #00 #00 #00 #10 #00 #77 #00 #69 #00 #6E #00 #64 #00 #6F #00 #77 #00 #5F #00 #31 #01 #00 #00 #00 #10 #00 #77 #00 #69 #00 #6E #00 #64 #00 #6F #00 #77 #00 #5F #00 #33 #01" />
+  <parameter name=""         value="#00 #00 #00 #00 #04 #00 #00 #00 #0E #00 #4D #00 #6F #00 #64 #00 #75 #00 #6C #00 #65 #00 #73 #01 #00 #00 #00 #1A #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #4D #00 #6F #00 #64 #00 #75 #00 #6C #00 #65 #00 #73 #01 #00 #00 #00 #1C #00 #53 #00 #61 #00 #6C #00 #6F #00 #6D #00 #65 #00 #53 #00 #74 #00 #61 #00 #6E #00 #64 #00 #61 #00 #72 #00 #64 #01 #00 #00 #00 #10 #00 #53 #00 #74 #00 #61 #00 #6E #00 #64 #00 #61 #00 #72 #00 #64 #01 #01 #00 #00 #00 #05 #00 #00 #00 #22 #00 #6F #00 #62 #00 #6A #00 #65 #00 #63 #00 #74 #00 #42 #00 #72 #00 #6F #00 #77 #00 #73 #00 #65 #00 #72 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #22 #00 #70 #00 #79 #00 #74 #00 #68 #00 #6F #00 #6E #00 #43 #00 #6F #00 #6E #00 #73 #00 #6F #00 #6C #00 #65 #00 #44 #00 #6F #00 #63 #00 #6B #01 #00 #00 #00 #10 #00 #77 #00 #69 #00 #6E #00 #64 #00 #6F #00 #77 #00 #5F #00 #30 #01 #00 #00 #00 #10 #00 #77 #00 #69 #00 #6E #00 #64 #00 #6F #00 #77 #00 #5F #00 #31 #01 #00 #00 #00 #10 #00 #77 #00 #69 #00 #6E #00 #64 #00 #6F #00 #77 #00 #5F #00 #33 #01" />
+ </section>
+</document>
